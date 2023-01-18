@@ -1,0 +1,10 @@
+[Unit]
+Description=Launch the lock_security.sh script
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/home/dummy/lock_security/lock_security.sh
+
+[Install]
+WantedBy=multi-user.target
